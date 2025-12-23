@@ -1,6 +1,3 @@
-Here's your complete README.md in plain text format:
-
-text
 # ⚖️ AI Bias Detection & Mitigation Framework
 
 A comprehensive framework for detecting and mitigating gender bias in NLP systems, including word embeddings (BERT) and text generation models (GPT-2). This project implements state-of-the-art fairness evaluation metrics and bias mitigation techniques based on research in algorithmic fairness [web:11][web:16].
@@ -35,8 +32,6 @@ cd bias-detection-nlp
 Install dependencies
 pip install -r requirements.txt
 
-text
-
 ### Requirements
 transformers==4.36.0
 torch==2.1.0
@@ -47,8 +42,6 @@ scipy==1.11.1
 matplotlib==3.7.2
 seaborn==0.12.2
 streamlit==1.29.0
-
-text
 
 ## 🔧 Usage
 
@@ -66,13 +59,9 @@ python classification_bias.py
 4. Bias Mitigation Techniques
 python mitigation_bias.py
 
-text
-
 ### Launch Interactive Dashboard
 
 streamlit run streamlit_app.py
-
-text
 
 ## 📊 Results & Visualizations
 
@@ -109,7 +98,7 @@ Hard debiasing achieves substantial bias reduction:
 
 ### Interactive Dashboard
 
-![Dashboard Interactive Test](streamlit_interactive_test.png)
+![Dashboard Interactive Test](streamlit_interactive_test.png.png)
 
 The Streamlit dashboard provides:
 - Real-time bias analysis visualization
@@ -119,23 +108,36 @@ The Streamlit dashboard provides:
 
 bias-detection-nlp/
 ├── embeddings_bias.py # BERT embedding bias detection (WEAT)
-├── generation_bias.py # GPT-2 text generation bias analysis
-├── classification_bias.py # Classification fairness metrics
-├── mitigation_bias.py # Bias mitigation techniques
-├── streamlit_app.py # Interactive dashboard
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── results/ # Generated analysis results
-├── embedding_bias_results.pkl
-├── generation_bias_results.pkl
-├── classification_bias_results.pkl
-├── mitigation_results.pkl
-├── occupation_bias.csv
-├── pronoun_bias.csv
-├── counterfactual_examples.csv
-└── debiasing_results.csv
 
-text
+├── generation_bias.py # GPT-2 text generation bias analysis
+
+├── classification_bias.py # Classification fairness metrics
+
+├── mitigation_bias.py # Bias mitigation techniques
+
+├── streamlit_app.py # Interactive dashboard
+
+├── requirements.txt # Python dependencies
+
+├── README.md # Project documentation
+
+└── results/ # Generated analysis results
+
+├── embedding_bias_results.pkl
+
+├── generation_bias_results.pkl
+
+├── classification_bias_results.pkl
+
+├── mitigation_results.pkl
+
+├── occupation_bias.csv
+
+├── pronoun_bias.csv
+
+├── counterfactual_examples.csv
+
+└── debiasing_results.csv
 
 ## 🧪 Methodology
 
@@ -147,7 +149,6 @@ WEAT measures bias by comparing associations between target word sets (career vs
 WEAT Score = mean(association(career, gender)) - mean(association(family, gender))
 Effect Size = WEAT Score / std_dev(all associations)
 
-text
 
 ### 2. Pronoun Usage Analysis
 
@@ -235,4 +236,7 @@ For questions or collaboration opportunities, please open an issue on GitHub.
 
 ---
 
+
 **Note**: This is a research and educational project. Results demonstrate bias detection techniques but should not be used as the sole basis for production fairness decisions without additional validation and domain expertise.
+
+Author: Raghav Kishore Venkatesh
